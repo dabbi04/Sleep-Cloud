@@ -352,29 +352,34 @@ export const botConfig = {
   keepAuditTrail: true,
   },
   
-// ============================
-// MESSAGE SENDER
-// ============================
-
-messagesender: {
-  // Enable or disable this feature
-  enabled: true,
-
-  // Channel ID where the message will be sent
-  channelId: "1494551960001450004",
-
-  // Message content (supports placeholders if your bot handles them)
-  content: "🌙 Welcome to DreamLand... relax, chat, and drift away 💭✨",
-
-  // Optional embed version (cleaner look)
-  embed: {
-    enabled: true,
-    title: "🌙 DreamLand",
-    description: "A new message has been sent into the dream...",
-    color: 7506394,
-    footer: "Sweet dreams 💫"
-  }
-},
+// =========================
+  // RULES CONFIGURATION
+  // =========================
+  rules: {
+    // The title of the rules embed or message
+    header: "🌙 DreamLand Rules ☁️",
+    
+    // The footer or closing statement
+    footer: "Welcome to DreamLand… a place to rest, relax, and drift away. Please keep things peaceful for everyone. ✨",
+    
+    // Your specific rules broken down for the bot to process
+    entries: [
+      "**💤 1.Keep the peace:** No drama, arguing, or negativity. This is a calm space to unwind.",
+      "**🤫 2.Respect quiet zones:** In sleep calls, avoid loud noises, yelling, or sudden sounds. Let others rest.",
+      "**🛏️ 3.Sleep calls = chill only:** No trolling, music blasting, or disruptive behavior in sleep channels.",
+      "**🌌 4.Be kind & respectful:** Treat everyone gently. No harassment, bullying, or rude behavior.",
+      "**🎧 5. Keep audio soft:** If you’re playing sounds or music, keep it low and relaxing.",
+      "**🔇 6.Use silent channels properly.**",
+      "**🌙 7.Respect boundaries:** If someone wants silence or space, respect that without question.",
+      "**💫 8. No inappropriate content:** Keep things safe, cozy, and comfortable for everyone."
+    ],
+    
+    // Channel ID where the rules should be officially posted
+    rulesChannel: "1494551960001450004", 
+    
+    // Option to enable a 'Rules Screening' or 'Gatekeeping' logic
+    requireAcknowledge: true,
+  },
   
   // =========================
   // WELCOME / GOODBYE MESSAGES
