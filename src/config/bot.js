@@ -351,7 +351,31 @@ export const botConfig = {
   // If true, preserve verification audit history.
   keepAuditTrail: true,
   },
+  
+// ============================
+// MESSAGE SENDER
+// ============================
 
+messagesender: {
+  // Enable or disable this feature
+  enabled: true,
+
+  // Channel ID where the message will be sent
+  channelId: "1494551960001450004",
+
+  // Message content (supports placeholders if your bot handles them)
+  content: "🌙 Welcome to DreamLand... relax, chat, and drift away 💭✨",
+
+  // Optional embed version (cleaner look)
+  embed: {
+    enabled: true,
+    title: "🌙 DreamLand",
+    description: "A new message has been sent into the dream...",
+    color: 7506394,
+    footer: "Sweet dreams 💫"
+  }
+},
+  
   // =========================
   // WELCOME / GOODBYE MESSAGES
   // =========================
