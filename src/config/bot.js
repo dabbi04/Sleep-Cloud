@@ -374,8 +374,8 @@ export const botConfig = {
       "**💫 8. No inappropriate content:** Keep things safe, cozy, and comfortable for everyone."
     ],
     
-    // Channel ID where the rules should be officially posted
-    rulesChannel: "1494551960001450004", 
+    // Channel ID for rules messages.
+    defaultWelcomeChannel: null,
     
     // Option to enable a 'Rules Screening' or 'Gatekeeping' logic
     requireAcknowledge: true,
